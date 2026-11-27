@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Daftar Belanja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <h1>Daftar Belanja</h1>
+      <p>Catat kebutuhan belanja Anda dengan mudah.</p>
+    </header>
+
+    <form id="shopping-form" class="input-group">
+      <input 
+        type="text" 
+        id="item-input" 
+        placeholder="Contoh: Susu, Roti, Telur..." 
+        autocomplete="off" 
+        required
+      >
+      <button type="submit" id="add-btn">Tambah</button>
+    </form>
+
+    <ul id="shopping-list" class="shopping-list">
+    </ul>
+
+    <p id="empty-message" class="empty-message">Belum ada item di daftar belanja.</p>
+
+    <div class="footer-actions">
+      <button type="button" id="clear-all-btn" class="clear-btn" style="display: none;">
+        Hapus Semua
+      </button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
